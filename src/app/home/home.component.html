@@ -24,7 +24,7 @@
           md:pb-4
         "
       >
-        <form class="mb-4 w-full md:mb-0 md:w-1/4">
+        <form class="mb-4 w-full md:mb-0 md:w-full">
           <label class="hidden" for="search-form">Search</label>
           <input
             class="
@@ -36,7 +36,7 @@
               shadow-inner
               w-full
             "
-            placeholder="Search"
+            placeholder="Find Something..."
             type="text"
           />
           <button class="hidden">Submit</button>
@@ -44,19 +44,30 @@
       </header>
     </div>
 
-    <div class="flex">
-      <div class="bg-white rounded-lg shadow-lg border p-6 w-64">
+    <div class="flex justify-start py-5">
+      <h1>Admin Dashboard</h1>
+    </div>
+
+    <div class="flex justify-between px-5">
+      <div class="bg-white rounded-lg shadow-lg border p-10 w-1/4">
         <h5 class="text-3xl font-bold mb-4 mt-0">Student</h5>
-        <p class="text-gray-700 text-sm">732 Students</p>
+        <p class="text-gray-700 text-sm">{{totalStudent}} Students</p>
       </div>
-      <div class="bg-white rounded shadow border p-6 w-64">
-        <h5 class="text-3xl font-bold mb-4 mt-0">Student</h5>
-        <p class="text-gray-700 text-sm">732 Students</p>
+      <div class="bg-white rounded-lg shadow-lg border p-10 w-1/4">
+        <h5 class="text-3xl font-bold mb-4 mt-0">Teacher</h5>
+        <p class="text-gray-700 text-sm">{{totalTeacher}} Students</p>
       </div>
-      <div class="bg-white rounded shadow border p-6 w-64">
-        <h5 class="text-3xl font-bold mb-4 mt-0">Student</h5>
-        <p class="text-gray-700 text-sm">732 Students</p>
+      <div class="bg-white rounded-lg shadow-lg border p-10 w-1/4">
+        <h5 class="text-3xl font-bold mb-4 mt-0">Parent</h5>
+        <p class="text-gray-700 text-sm">{{totalParent}} Students</p>
       </div>
     </div>
+
+    <div class="flex py-6">
+      <div class="bg-white rounded shadow-md border p-6 w-6/12">
+        <h1>test</h1>
+      </div>
+    </div>
+
   </div>
 </div>
